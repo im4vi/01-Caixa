@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8000/api/features/";
+const API_URL = "/api/features/";
 
 function getCookie(name) {
     const cookieValue = document.cookie
@@ -8,50 +8,56 @@ function getCookie(name) {
 }
 
 async function loadFeatures() {
-    const res = await fetch(API_URL, { credentials: "include" });
-    const data = await res.json();
+    try {
+        const res = await fetch(API_URL);
+        const data = await res.json();
 
-    const tbody = document.querySelector("#featuresTable tbody");
-    tbody.innerHTML = "";
+        const tbody = document.querySelector("#featuresTable tbody");
+        tbody.innerHTML = "";
 
-    data.forEach(f => {
-        const row = document.createElement("tr");
-
-        row.innerHTML = `
-            <td>${f.id}</td>
-            <td>${f.name}</td>
-            <td>${f.enabled}</td>
-            <td>
-                <button onclick="toggleFeature(${f.id}, ${f.enabled})">
-                    Toggle
-                </button>
-            </td>
-        `;
-        tbody.appendChild(row);
-    });
+        data.forEach(f => {
+            const row = document.createElement("tr");
+            row.innerHTML = `
+                <td>${f.id}</td>
+                <td>${f.name}</td>
+                <td>${f.enabled ? '✓' : '✗'}</td>
+                <td>
+                    <button onclick="toggleFeature(${f.id}, ${f.enabled})">
+                        Toggle
+                    </button>
+                </td>
+            `;
+            tbody.appendChild(row);
+        });
+    } catch (error) {
+        console.error('Error:', error);
+        alert('Error cargando features: ' + error.message);
+    }
 }
 
 async function toggleFeature(id, currentValue) {
     const newValue = !currentValue;
     const csrftoken = getCookie("csrftoken");
 
-    const res = await fetch(`${API_URL}${id}/`, {
-        method: "PATCH",
-        headers: {
-            "Content-Type": "application/json",
-            "X-CSRFToken": csrftoken,
-            "X-Requested-With": "XMLHttpRequest"
-        },
-        credentials: "include",
-        body: JSON.stringify({ enabled: newValue })
-    });
+    try {
+        const res = await fetch(`${API_URL}${id}/`, {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json",
+                "X-CSRFToken": csrftoken,
+            },
+            body: JSON.stringify({ enabled: newValue })
+        });
 
-    if (!res.ok) {
-        const txt = await res.text();
-        alert("PATCH Failed: " + txt);
+        if (!res.ok) {
+            const txt = await res.text();
+            alert("Error: " + txt);
+        } else {
+            loadFeatures();
+        }
+    } catch (error) {
+        alert("Error: " + error.message);
     }
-
-    loadFeatures();
 }
 
 loadFeatures();
