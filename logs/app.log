@@ -2,3 +2,56 @@ ERROR 2026-02-11 08:40:25,235 views Feature 999 no encontrado
 ERROR 2026-02-11 09:42:53,898 views Feature 999 no encontrado
 INFO 2026-02-11 09:44:18,223 views Listando features
 INFO 2026-02-11 09:44:26,765 views Feature 1 obtenido
+INFO 2026-02-11 09:49:31,539 views Listando features
+INFO 2026-02-11 09:49:39,168 views Feature 4 actualizado a enabled=True
+INFO 2026-02-11 09:49:39,173 views Listando features
+INFO 2026-02-11 09:49:48,763 views Feature 4 actualizado a enabled=False
+INFO 2026-02-11 09:49:48,768 views Listando features
+INFO 2026-02-11 09:50:46,575 views Feature 3 actualizado a enabled=True
+INFO 2026-02-11 09:50:46,580 views Listando features
+INFO 2026-02-11 09:50:47,234 views Feature 4 actualizado a enabled=True
+INFO 2026-02-11 09:50:47,239 views Listando features
+INFO 2026-02-11 10:16:51,680 views Feature 2 actualizado a enabled=True
+INFO 2026-02-11 10:16:51,685 views Listando features
+INFO 2026-02-11 10:16:52,225 views Feature 2 actualizado a enabled=False
+INFO 2026-02-11 10:16:52,229 views Listando features
+INFO 2026-02-11 10:29:48,583 views Feature 3 actualizado a enabled=False
+INFO 2026-02-11 10:29:48,593 views Listando features
+INFO 2026-02-11 10:30:44,666 views Feature 3 actualizado a enabled=True
+INFO 2026-02-11 10:30:44,674 views Listando features
+INFO 2026-02-11 10:57:35,570 views Listando features
+INFO 2026-02-11 10:57:36,419 views Listando features
+INFO 2026-02-11 10:57:36,904 views Listando features
+INFO 2026-02-11 10:57:37,223 views Listando features
+INFO 2026-02-11 10:57:37,400 views Listando features
+INFO 2026-02-11 10:57:39,104 views Listando features
+INFO 2026-02-11 10:57:39,548 views Listando features
+INFO 2026-02-11 10:58:33,906 views Listando features
+INFO 2026-02-11 11:15:48,360 views Listando features
+INFO 2026-02-11 11:16:27,883 views Listando features
+INFO 2026-02-11 11:28:40,233 views Listando features
+INFO 2026-02-11 11:31:56,046 views Listando features
+INFO 2026-02-11 11:32:54,598 views Feature 3 actualizado a enabled=False
+INFO 2026-02-11 11:32:54,605 views Listando features
+INFO 2026-02-11 11:33:00,902 views Listando features
+INFO 2026-02-11 11:33:21,317 views Listando features
+INFO 2026-02-11 11:33:51,960 views Listando features
+INFO 2026-02-11 11:41:46,339 views Listando features
+INFO 2026-02-11 12:04:08,485 views Listando features
+INFO 2026-02-11 12:04:53,258 views Listando features
+INFO 2026-02-11 12:05:22,438 views Listando features
+INFO 2026-02-11 12:06:52,117 views Listando features
+INFO 2026-02-11 12:06:52,774 views Listando features
+INFO 2026-02-11 12:06:54,465 views Feature 4 actualizado a enabled=False
+INFO 2026-02-11 12:06:54,471 views Listando features
+INFO 2026-02-11 12:06:55,064 views Feature 4 actualizado a enabled=True
+INFO 2026-02-11 12:06:55,069 views Listando features
+INFO 2026-02-11 12:12:25,374 views Listando features
+INFO 2026-02-11 12:12:56,247 views Listando features
+INFO 2026-02-11 12:13:28,009 views Listando features
+INFO 2026-02-11 12:13:45,762 views Listando features
+INFO 2026-02-11 12:38:16,050 views Listando features
+INFO 2026-02-11 12:38:50,996 views Listando features
+INFO 2026-02-11 12:38:58,879 views Listando features
+INFO 2026-02-11 12:40:15,362 views Listando features
+INFO 2026-02-11 12:40:21,489 views Listando features

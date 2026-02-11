@@ -150,8 +150,6 @@ CORS_ALLOW_CREDENTIALS = True
 
 # feature_flags_project/settings.py
 
-import os
-
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
